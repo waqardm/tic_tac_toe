@@ -1,9 +1,12 @@
 # frozen_string_literal: true
 
-require 'tic_tac_toe/version'
+require_relative 'tic_tac_toe/version'
+
+module TicTacToe # :nodoc:
+end
+
 require_relative 'tic_tac_toe/cell'
 require_relative 'tic_tac_toe/player'
-
-module TicTacToe
-  class Error < StandardError; end
-end
+require_relative 'tic_tac_toe/board'
+require_relative 'tic_tac_toe/game'
+require_relative 'core_extensions'
